@@ -1,0 +1,86 @@
+.fa_slider
+{
+    font-family: 'Raleway';
+
+    color: #fff;
+
+    &__wrapper
+    {
+        position: relative;
+
+        background-size: cover;
+
+        &:before
+        {
+            display: block;
+
+            padding-top: 32%;
+
+            content: '';
+        }
+    }
+    &__info
+    {
+        position: absolute;
+        top: 225px;
+        left: 0;
+
+        width: 100%;
+
+        text-align: center;
+    }
+
+    &__title
+    {
+        font-size: 3rem;
+        font-weight: 900;
+
+        margin-top: 0;
+        margin-bottom: 26px;
+    }
+
+    &__slogan
+    {
+        font-size: 36px;
+        font-weight: 800;
+
+        margin-bottom: 40px;
+    }
+
+    &__input-wrapper
+    {
+        
+    }   
+
+    &__controls
+    {
+        position: absolute;
+        right: 15%;
+        bottom: 15px;
+
+        display: inline-block;
+
+        padding-left: 60px;
+
+        text-decoration: none;
+
+        color: inherit;
+
+        &:before
+        {
+            position: absolute;
+            top: 50%;
+            left: 0;
+
+            display: block;
+
+            width: 53px;
+            height: 50px;
+
+            content: '';
+            transform: translateY(-50%);
+
+            background-image: url(../images/play.png);
+        }
+    }
+}

@@ -1,0 +1,161 @@
+@import "compass/css3";
+ 
+@include font-face("Museo500", font-files("bgrove.ttf", "bgrove.otf"));
+
+/*********************************************************************************/
+
+@import "compass/utilities/sprites";
+
+@import "tabicons/*.png";
+
+@include all-tabicons-sprites;
+
+/*********************************************************************************/
+
+@import "compass/layout/sticky-footer";
+
+@include sticky-footer(54px);
+
+<body>
+  <div id="root">
+    <div id="root_footer"></div>
+  </div>
+  <div id="footer">
+    Footer content goes here.
+  </div>
+</body>
+
+-webkit-transition: .25s linear opacity;
+-moz-transition: .25s linear opacity;
+-o-transition: .25s linear opacity;
+transition: .25s linear opacity;
+
+    -webkit-transition: .15s ;
+       -moz-transition: .15s ;
+         -o-transition: .15s ;
+            transition: .15s ;
+
+
+            .wrapimg
+{
+    position: absolute;
+    z-index: 10000000;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    opacity: .2;
+    background-image: url(../images/bg02.png);
+    background-position: center 00px;
+
+            filter: invert(100%);
+    -webkit-filter: invert(100%);
+       -moz-filter: invert(100%);
+         -o-filter: invert(100%);
+        -ms-filter: invert(100%);
+    // display: none;
+}
+
+
+<?php
+                        jimport( 'joomla.application.module.helper' ); 
+                        $modules = JModuleHelper::getModules('position-9'); 
+                        $attribs['style'] = 'none'; // 
+
+                        foreach($modules as $module) {
+                           echo JModuleHelper::renderModule($module, $attribs);
+                        }
+                        
+                    ?>
+
+
+                    
+
+<div class="row">
+
+    <div class="col-sm-4">
+
+        <div class="form-input">{element label="Имя" type="text" class="inputtext" plaseholder="Ваше имя"    required="required" error="Введите ваше имя"  /}</div>
+        <div class="form-input">{element label="Телефон" type="text" class="inputtext phone" plaseholder="Номер вашего телефона"    required="required" error="Введите ваш телефон"  /}</div>
+        <div class="form-input">{element label="e-mail" type="text" class="inputtext" plaseholder="Ваш e-mail"    required="required" error="Введите ваш e-mail"  /}</div>
+
+    </div>
+    <div class="col-sm-5">
+
+        <div class="form-input">{element label="Ваше сообщение" type="textarea" class="inputtext" plaseholder="Ваше сообщение"    required="required" error="Введите ваше сообщение"  /}</div>
+        <div class="form-submit">{element  type="submit"   value="Отправить"  /}</div>
+
+     </div>   
+
+</div>
+
+<h4>Ваше сообщение отправлено</h4>
+
+:focus::-webkit-input-placeholder {color: transparent}
+:focus::-moz-placeholder          {color: transparent}
+:focus:-moz-placeholder           {color: transparent}
+:focus:-ms-input-placeholder      {color: transparent}
+
+$unicodeslugs = VmConfig::get('transliterateSlugs',false);
+
+$unicodeslugs = VmConfig::get('transliterateSlugs',true);
+
+в administrator/components/virtuemart/helpers/vmtable.php
+
+.alltrclass
+{
+    -webkit-transition: .3s ;
+       -moz-transition: .3s ;
+         -o-transition: .3s ;
+            transition: .3s ;
+}
+
+.psclass
+{
+    position: absolute;
+
+    display: block;
+
+    content: '';
+}
+
+@media (max-width: 1429px)
+{
+    .fa_container
+    {
+        max-width: 1170px;
+    }
+}
+@media (max-width: 1280px)
+{
+    .fa_container
+    {
+        max-width: 990px;
+    }
+}
+  @media (max-width: 991px)
+{
+    .fa_container
+    {
+        max-width: 750px;
+    }
+}
+
+@media (max-width: 767px)
+{
+    .fa_container
+    {
+        max-width: 570px;
+    }
+}
+
+
+  @media (max-width: 575px)
+{
+}
+
+
+
+
+ 

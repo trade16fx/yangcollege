@@ -1,0 +1,275 @@
+.fa_footer{
+  background-color: #F2F8FC;
+
+  &__top{
+  padding-top: 26px;
+    display: flex;
+    flex-wrap: wrap;
+    
+  }
+  &__bottom{
+    padding-top: 10px;
+    padding-bottom: 19px;
+   
+    font-size: 10px;
+    text-align: center;
+
+    a{
+      
+     
+      line-height: 1.5;
+
+      &:hover{
+        border-color: transparent;
+      }
+    }
+  }
+  &__logo{
+    font-size: 11px;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+  &__col{
+    width: 50%;
+   
+
+    &:nth-child(1){
+      width: 100%;
+      margin-bottom: 25px;
+      color: #000000;
+    }
+    &:nth-child(2){
+      width: 100%;
+      order:2;
+      border-top: 1px solid rgba(212, 221, 227, 0.6);;
+      padding-top: 22px;
+      margin-top: 22px;
+      text-align: center;
+    }
+    &:nth-child(3){
+      .fa_menu{
+        margin-left: auto;
+      }
+    }
+    &:nth-child(4){
+      .fa_menu{
+        li{
+          &:first-child{
+            display: none;
+          }
+        }
+      }
+    }
+
+    &:last-child{
+      padding-left: 10px;
+    }
+  }
+  &__coursename{
+    font-size: 10px;
+    margin-top: 4px;
+    padding-left: 8px;
+  }
+  &__bottom-col{
+    margin-bottom: 14px;
+
+    &:nth-child(2){
+       margin-bottom: 6px;
+    }
+
+    &:last-child{
+      margin-bottom: 0;
+    }
+
+
+  }
+  .fa_anti{
+    a{
+      
+
+     
+    }
+  }
+}
+.page-template-template-about .fa_footer__top, .page-template-template-faq .fa_footer__top, .page-template-template-info .fa_footer__top, .page-id-15 .fa_footer__top, .page-id-184 .fa_footer__top{
+  border-top: 1px solid rgba(212, 221, 227, 0.6);
+}
+.fa_menu{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  padding-right: 15px;
+  width: 110px;
+  li{
+    margin-bottom: 8px;
+    line-height: 1;
+
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+  a{
+    font-size: 12px;
+    border-bottom: none;
+    padding-right: 10px;
+    background: url(../images/mnu-arrow.svg) right calc(100% - 4px) no-repeat;
+    color: inherit;
+    line-height: 1;
+    background-size: 4px auto;
+
+    &:hover{
+      color: #3AA1EC;
+
+    }
+  }
+}
+
+@media (min-width: 576px) { 
+    
+}
+@media (min-width: 768px) { 
+  .fa_footer{
+    &__top{}
+    &__bottom{
+      // display: flex;
+      margin-top: 22px;
+      padding-top: 22px;
+      border-top: 1px solid rgba(212,221,227,0.6);
+    }
+    &__col{
+      width: 25%;
+
+      &:nth-child(1){
+        width: 25%;
+      }
+
+      &:nth-child(2){
+        width: 25%;
+        padding-top: 0;
+        margin-top: 0;
+        border-top: none;
+        order:0;
+      }
+
+    }
+    &__coursename{}
+    &__bottom-col{
+
+      &:nth-child(2){
+        // text-align: center;
+        // padding: 0 15px;
+      }
+      &:nth-child(3){
+        // text-align: right;
+      }
+    }
+  } 
+  .fa_menu{
+    margin-top: 0;
+    li{}
+    a{
+
+      &:hover{
+
+      }
+
+
+    }
+  }  
+}
+@media (min-width: 992px) {
+  .fa_footer{
+    &__top{
+    padding-top: 42px;
+      justify-content: space-between;
+      margin-bottom: 70px;
+    }
+    &__bottom{
+      justify-content: space-between;
+      font-size: 11px;
+      padding-top: 20px;
+      display: flex;
+      align-items: center;
+    }
+    &__logo{
+      width: 230px;
+      font-size: 18px;
+      margin-left: 0;
+
+    }
+    &__col{
+      width: 20%;
+      &:nth-child(1){
+        width: 30%;
+      }
+      &:nth-child(2){
+        width: 27%;
+      }
+      &:nth-child(3){
+        .fa_menu{
+          li{
+            &:last-child{
+              display: none;
+            }
+          }
+        }
+      }
+      &:nth-child(4){
+        .fa_menu{
+          li{
+            &:first-child{
+              display: block;
+            }
+          }
+        }
+      }
+
+    }
+    &__coursename{
+      font-size: 13px;
+      text-align: left;
+      width: 220px;
+    }
+    &__bottom-col{
+      &:nth-child(1){
+        text-align: left;
+      }
+      &:nth-child(2){
+        text-align: center;
+        padding: 0 15px;
+      }
+      &:nth-child(3){
+        text-align: right;
+      }
+    }
+  } 
+  .fa_menu{
+    width: 220px;
+   
+      padding-right: 0;
+      padding-left: 0;
+
+    li{}
+    a{
+      font-size: 13px;
+      background-size: 5px auto;
+      background-position: right calc(100% - 2px);
+    }
+  }     
+}
+@media (min-width: 1200px) {
+  .fa_footer{
+    &__top{}
+    &__bottom{}
+    &__col{}
+    &__coursename{}
+    &__bottom-col{}
+  } 
+  .fa_menu{
+    li{}
+    a{}
+  }  
+}
+

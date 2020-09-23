@@ -1,0 +1,315 @@
+.fa_license-area{
+  background-color: #fff;
+  text-align: center;
+  h2{
+    margin-top: 0;
+    font-weight: 300;
+    font-size: 19px;
+    margin-bottom: 15px;
+      line-height: 1;
+      color: #000;
+
+  }
+  .fa_title{
+    margin-bottom: 28px;
+    text-align: center;
+
+  }
+  &__wrap{
+
+
+  }
+  &__right{
+
+    h3{
+      margin-bottom: 0;
+    }
+
+  }
+  &__left{
+    margin-bottom: 38px;
+  }
+  &__desc{
+    font-size: 12px;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &__what{
+    font-size: 13px;
+    margin-bottom: 10px;
+    display: inline-block;
+  }
+}
+.page-template-template-license{
+  .fa_license-area{
+    background-color: #fff;
+  }
+}
+.fa_license-list{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  &__item{
+    display: flex;
+     align-items: flex-start;
+    
+    margin-bottom: 20px;
+
+    &:last-child{
+      margin-bottom: 0;
+    }
+    picture{
+      display: block;
+      width: 37px;
+    }
+  }
+  &__item:nth-child(1) picture{
+    width: 46px;
+  }
+
+  &__mediabox{
+    width: 59px;
+    padding-left: 3px;
+    padding-top: 5px;
+
+  }
+  &__item:nth-child(1) &__mediabox{
+    padding-left: 0;
+  }
+  &__body{
+    flex:1;
+    font-size: 14px;
+
+  }
+}
+.fa_license-slider{
+  &__wrap{
+    position: relative;
+    padding: 0 35px;
+    margin-bottom: 8px;
+    margin-left: -8px;
+    margin-right: -8px;
+  }
+  &__item{
+    text-align: center;
+
+  }
+  &__arrow{
+    width: 16px;
+    height: 43px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    &_next{
+      background-image: url(../images/next-arrow2.svg);
+
+    }
+    &_prev{
+      right: auto;
+      left: 0;
+      background-image: url(../images/prev-arrow2.svg);
+    
+    }
+  }
+}
+.fa_license-grid{
+  display: flex;
+  margin-left: -8px;
+  margin-right: -8px;
+  margin-bottom: 8px;
+  &__item{
+    flex: 0 0 33%;
+    padding: 0 4px;
+
+  }
+}
+
+@media (min-width: 576px) { 
+    
+}
+@media (min-width: 768px) { 
+  .fa_license-area{
+    h2{
+     font-size: 24px;
+     margin-bottom: 24px;
+    }
+    .fa_title{
+      margin-bottom: 50px;
+      
+    }
+    &__wrap{
+     
+
+    }
+    &__right{
+      width: 50%;
+      padding: 0 15px;
+      
+
+    }
+    &__left{
+      width: 50%;
+      padding: 0 15px;
+      
+
+    }
+
+  }
+  .fa_license-list{
+    padding-right: 50px;
+    &__item{
+      align-items: center;
+
+    }
+    &__mediabox{
+
+    }
+    &__body{
+
+    }
+  }
+  .fa_license-slider{
+    &__item{
+
+    }
+    &__arrow{
+      width: 25px;
+      height: 55px;
+
+      &_next{
+        right: 0;
+        background-image: url(../images/next-arrow.svg);
+
+      }
+      &_prev{
+        background-image: url(../images/prev-arrow.svg);
+      
+      }
+    }
+  }
+}
+@media (min-width: 992px) {
+  .fa_license-area{
+    h2{    
+      font-size: 30px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 38px;
+    }
+  
+    
+    &__wrap{
+    }
+    &__right{
+      h3{
+        width: 280px;
+        margin-bottom: 8px;
+      }
+    }
+    &__left{
+      margin-bottom: 0;
+    }
+    &__desc{
+      font-size: 14px;
+      width: 380px;
+      margin-bottom: 0px;
+    }
+    &__what{
+      margin-bottom: 9px;
+    }
+}
+.fa_license-list{
+  padding-right: 75px;
+  &__item{
+    margin-bottom: 24px;
+
+  }
+  &__mediabox{
+    width: 108px;
+    padding-left: 7px;
+
+    picture{
+      width: auto !important;
+    }
+
+   
+
+  }
+  &__item:nth-child(1) &__mediabox{
+    padding-left: 0;
+  }
+  &__body{
+    font-size: 16px;
+
+  }
+}
+.fa_license-slider{
+  &__wrap{
+    padding: 0 53px;
+  }
+  &__item{
+
+  }
+  &__arrow{
+
+    &_next{
+      right: 20px;
+
+    }
+    &_prev{
+      left: 20px;
+    
+    }
+  }
+} 
+}
+@media (min-width: 1200px) {
+    .fa_license-area{
+  h2{
+    font-size: 42px;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fa_title{
+
+  }
+  &__wrap{
+
+  }
+  &__right{
+
+  }
+  &__left{
+
+  }
+
+}
+.fa_license-list{
+  &__item{
+
+  }
+  &__mediabox{
+
+  }
+  &__body{
+
+  }
+}
+.fa_license-slider{
+  &__item{
+
+  }
+  &__arrow{
+
+    &_next{
+
+    }
+    &_prev{
+    
+    }
+  }
+}
+}

@@ -1,0 +1,470 @@
+.fa_doc-area{
+  background-color: #F2F8FC;
+  h2{
+    width: 220px;
+    margin-left: auto;  margin-right: auto;
+    margin-bottom: 26px;
+
+  }
+  &__title{
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 1.3;
+   // width: 240px;
+    margin-top: 0;
+    margin-bottom: 6px;
+    color: #000;
+    max-width: 300px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+
+    &_choice{
+      width: 280px;
+    }
+
+    order:0;
+  }
+  .fa_col{
+    display: flex;
+    flex-direction: column;
+  }
+  &__wrap{
+
+  }
+  &__left{
+    margin-bottom: 8px;
+
+  }
+  &__right{
+
+  }
+  &__desc{
+    font-size: 12px;
+    color: #6D6D6D;
+    text-align: center;
+    order:2;
+    margin-bottom: 16px;
+    width: 240px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &__sert-cont{
+    margin-bottom: 12px;
+
+    picture{
+      width: 257px;
+      display: block;
+    }
+
+  }
+
+}
+.fa_doc-slider{
+  &__wrapper{
+    position: relative;
+    margin-bottom: 8px;
+    padding: 0 25px;
+    order:1;
+  }
+  &__item{
+    text-align: center;
+    picture, img{
+      overflow: hidden;
+      vertical-align: middle;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+  }
+  &__arrow{
+
+
+    
+  }
+}
+.fa_slider-arrow{
+
+    width: 9px;
+    height: 20px;
+    background-size: 100%;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    transform: translateY(-50%);
+
+    &_next{
+      background-image: url(../images/next-arrow.svg);
+      right: 0;
+    }
+    &_prev{
+      background-image: url(../images/prev-arrow.svg);
+      left: 0;    
+    }
+}
+.fa_zoom{
+  display: block;
+  position: relative;
+  border: none;
+  &:before{
+    display: block;
+    position: absolute;
+    opacity: 0;
+    transition: all .3s;
+    left: 50%;
+    top: 50%;
+    content: '';
+    width: 69px;
+    height: 69px;
+    background: #103C8F url(../images/zoom.svg) center 14px no-repeat;
+    transform: translateY(-50%)  translateX(-50%);    
+    border-radius: 8px;
+    padding: 8px;
+  } 
+
+  &_large:before{
+    width: 90px;
+    height: 90px;
+    background-position: center 19px;
+    background-size: 41px auto;
+  }
+
+  &:hover:before, &:hover:after{
+    opacity: 1;
+  } 
+
+  &:after{
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    content: '';
+    width: 42px;
+    height: 42px;
+    transform: translateY(-50%) translateX(-50%);
+    border-bottom: 2px solid #E05B23;
+    opacity: 0;
+    transition: all .3s;
+  }
+  &_large:after{
+    width: 55px;
+    height: 55px;
+  }
+}
+
+.fa_sert-card{
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 17px 15px;
+  align-items: center;
+  background: #E5F0F7;
+  border-radius: 8px; 
+  color: #000;
+
+
+  &__body{
+    padding-right: 15px;
+    // padding-top: 10px;
+    flex:1;
+    max-width: 176px;
+  }
+  &__title{
+    font-size: 25px;
+
+  }
+  &__desc{
+    font-size: 13px;
+    color: #6D6D6D;
+    margin-bottom: 8px;
+  }
+  &__more{
+    font-size: 12px;
+  }
+  &__mediabox{
+    width: 35%;
+  }
+  &__dop{
+    display: none;
+  }
+}
+
+
+@media (min-width: 576px) { 
+
+.fa_doc-slider{
+  &__wrapper{
+    padding: 0;
+  }
+}
+    
+}
+@media (min-width: 768px) { 
+  .fa_doc-area{
+    h2{
+     
+      margin-bottom: 50px;
+      width: 100%;
+    }
+    h3{
+      width: 100%;
+      text-align: center;
+      font-weight: 500;
+      margin-bottom: 20px;
+      
+    }
+    &__wrap{
+      display: flex;
+     // justify-content: space-between;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    &__left{
+      width: 100%;
+      padding: 0 30px;
+      
+    }
+    &__right{
+      //width: 27%;
+      width: 100%;
+      
+      picture{
+         width: 100%;
+
+      }
+    }
+
+    .fa_row{
+      
+      display: flex;
+     
+    }
+    .fa_col{
+      width: 285px;
+
+      &:first-child{
+        margin-right: 60px;
+      }
+      
+    }
+
+    &__title{
+      text-align: center;
+
+    }
+
+    &__desc{
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    &__sert-cont{
+      width: 190px;
+      margin-left: auto;
+      margin-bottom: 20px;
+    }
+  }
+  .fa_slider-arrow{
+    
+    top: 50%;
+    transform: translateY(-50%);
+
+    &_next{
+      
+      right: -30px;
+    }
+    &_prev{
+      
+      right: auto;    
+      left: -30px;
+    }
+  } 
+  .fa_doc-slider{
+    &__wrapper{
+      margin-bottom: 20px;
+      width: 285px;
+      margin-left: auto;
+      margin-top: auto;
+      margin-top: 0;
+      order:1;
+    }
+    &__item{
+
+    }
+    &__arrow{
+      &_next{
+        right: -25px;
+      }
+    }
+    &_prev{
+      left: -25px;    
+    }
+  }  
+}
+@media (min-width: 992px) {
+  .fa_doc-area{
+
+    h2{
+      font-size: 32px;
+      margin-top: 0;
+    }
+    h3{
+      font-size: 20px;
+      max-width: 340px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  &__wrap{}
+  &__left{
+
+    width: calc(100% - 200px);
+    padding: 0 40px ;
+    margin-bottom: 0;
+   
+   
+  }
+  &__right{
+    width: 200px;
+   
+    
+  }
+  &__desc{
+    //font-size: 16px;
+    margin-bottom: 0;
+  }
+  &__sert-cont{
+    width: 100%;}
+.fa_col{
+     
+
+      &:first-child{
+        //margin-right: 40px;
+      }
+      
+    }
+
+}
+  
+  .fa_sert-card{
+      flex-direction: column;
+
+    &__body{
+      text-align: center;
+      padding-right: 0;
+      max-width: none;
+
+      a{
+        display: none;
+      }
+    }
+    &__title{}
+    &__desc{
+      margin-bottom: 24px;
+    }
+    &__more{}
+    &__mediabox{
+      width: 180px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 10px;
+    }
+    &__dop{
+      display: block;
+      text-align: center;
+      width: 100%;
+    }
+  }
+}
+@media (min-width: 1200px) {
+ .fa_doc-area{
+  h2{
+    font-size: 48px;
+    margin-top: 14px;
+    margin-bottom: 42px;
+  }
+  &__wrap{}
+  &__left{
+
+    width: calc(100% - 274px);
+    padding: 0 40px  0 10px;
+    margin-bottom: 0;
+   
+   
+  }
+  &__right{
+    width: 274px;
+   
+    
+  }
+  &__title{
+    font-size: 18px;
+    margin-bottom: 22px;
+  }
+  .fa_col {
+
+    width: 305px;
+
+    &:first-child{
+      margin-right: 80px;
+    }
+
+}
+  &__desc{
+    font-size: 13px;
+  }
+  &__sert-cont{
+  }
+
+  }
+  .fa_doc-slider{
+    &__wrapper{
+      margin-bottom: 8px;
+    }
+    &__item{
+
+    }
+    &__arrow{
+      &_next{
+
+      }
+    }
+    &_prev{
+    
+    }
+  } 
+  .fa_slider-arrow{    
+    width: 15px;
+    height: 33px;
+    &_next{      
+      right: -34px;
+    }
+    &_prev{       
+      left: -34px;
+    }
+  } 
+
+  .fa_sert-card{
+    padding: 20px 15px 28px;
+    &__body{}
+    &__title{
+      font-size: 32px;
+    }
+    &__desc{
+      font-size: 14px;
+    }
+    &__more{
+      font-size: 13px;
+    }
+    &__mediabox{}
+    &__dop{
+
+    }
+  }
+
+}

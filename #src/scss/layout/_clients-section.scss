@@ -1,0 +1,29 @@
+.fa_clients-area{
+  background-color: #fff; 
+  &__block{
+    text-align: center;    
+  }
+}
+
+@media (min-width: 576px) { 
+    
+}
+@media (min-width: 768px) { 
+  .fa_clients-area{
+    &__block{
+      text-align: center;
+    }
+  }  
+}
+@media (min-width: 992px) {
+  .fa_clients-area{
+    h2{
+      text-align: left;
+      font-size: 48px;
+    }
+  }
+    
+}
+@media (min-width: 1200px) {
+    
+}

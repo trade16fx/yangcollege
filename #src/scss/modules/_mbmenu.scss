@@ -1,0 +1,253 @@
+/* mob-menu-btn begin */
+
+.fa_mobile-menu-button
+{
+    position: relative;
+    z-index: 100;
+
+    float: left;
+
+    width: 19px;
+    height: 15px;
+   
+
+    cursor: pointer;
+    -webkit-transition: all 200ms ease-out;
+       -moz-transition: all 200ms ease-out;
+         -o-transition: all 200ms ease-out;
+            transition: all 200ms ease-out;  
+}
+
+
+.fa_mobile-menu-button.active .icon-menu-burger
+{
+    -webkit-transition:         transform .2s linear .4s;
+    -webkit-transition: -webkit-transform .2s linear .4s;
+       -moz-transition:         transform .2s linear .4s;
+        -ms-transition:         transform .2s linear .4s;
+         -o-transition:         transform .2s linear .4s;
+            transition:         transform .2s linear .4s;
+    -webkit-transform: rotate(45deg);
+       -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+         -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+}
+.fa_mobile-menu-button.active .icon-menu-burger__line
+{
+    -webkit-transform: rotate(90deg);
+       -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+         -o-transform: rotate(90deg);
+            transform: rotate(90deg);
+
+            background: #E05B23;
+}
+.fa_mobile-menu-button.active .icon-menu-burger:before
+{
+    top: 0;
+
+    -webkit-transition: top .2s linear;
+       -moz-transition: top .2s linear;
+        -ms-transition: top .2s linear;
+         -o-transition: top .2s linear;
+            transition: top .2s linear;
+
+    background: #E05B23;
+
+
+}
+.fa_mobile-menu-button.active .icon-menu-burger:after
+{
+    bottom: 0;
+
+    -webkit-transition: bottom .2s linear;
+       -moz-transition: bottom .2s linear;
+        -ms-transition: bottom .2s linear;
+         -o-transition: bottom .2s linear;
+            transition: bottom .2s linear;
+
+            background: #E05B23;
+}
+
+
+ .icon-menu-burger
+{
+    position: absolute;
+    top: 50%;
+
+    width: 19px;
+    height: 1px;
+
+    -webkit-transition:         transform .2s ease 0s;
+    -webkit-transition: -webkit-transform .2s ease 0s;
+       -moz-transition:         transform .2s ease 0s;
+        -ms-transition:         transform .2s ease 0s;
+         -o-transition:         transform .2s ease 0s;
+            transition:         transform .2s ease 0s;
+}
+.icon-menu-burger__line
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    -webkit-transition:         transform .2s linear .2s;
+    -webkit-transition: -webkit-transform .2s linear .2s;
+       -moz-transition:         transform .2s linear .2s;
+        -ms-transition:         transform .2s linear .2s;
+         -o-transition:         transform .2s linear .2s;
+            transition:         transform .2s linear .2s;
+
+    background: #fff;
+}
+.icon-menu-burger:before,
+.icon-menu-burger:after
+{
+    position: absolute;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    content: '';
+
+    background: #fff;
+}
+.icon-menu-burger:before
+{
+    top: -6px;
+
+    -webkit-transition: top .2s linear .4s;
+       -moz-transition: top .2s linear .4s;
+        -ms-transition: top .2s linear .4s;
+         -o-transition: top .2s linear .4s;
+            transition: top .2s linear .4s;
+}
+.icon-menu-burger:after
+{
+    bottom: -6px;
+
+    -webkit-transition: bottom .2s linear .4s;
+       -moz-transition: bottom .2s linear .4s;
+        -ms-transition: bottom .2s linear .4s;
+         -o-transition: bottom .2s linear .4s;
+            transition: bottom .2s linear .4s;
+} 
+
+
+/* mob-menu-btn end */
+
+.fa_nav-wrap
+{
+    
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    z-index: 100;
+    background-color: #fff;
+    max-width: 70%;
+
+    transition: all .3s;
+    transform: translateX(100%);
+
+    border-top: 1px solid rgba(0, 0, 0, .06);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, .06);
+
+    &.active
+    {
+        transform: translateX(0);
+    }
+}
+
+
+
+/* Start mobile menu */
+
+
+
+
+
+
+/* Start modal dialog*/
+
+.fa_modalDialog
+{
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+
+    opacity: 0;
+    background-color: rgba(0,70,120,0.4);
+
+    &.active
+    {
+        pointer-events: auto;
+
+        opacity: 1;
+    }
+    &.blur {
+        filter: blur(2px);
+        pointer-events: auto;
+
+        opacity: 1;
+      }
+}
+
+/* End modal dialog*/
+
+
+@media (min-width: 576px) { 
+    
+}
+@media (min-width: 768px) { 
+
+  .fa_mobile-menu-button {
+    width: 30px;
+    height: 26px;
+
+  }
+
+  .icon-menu-burger {
+    width: 30px;
+  }
+  .icon-menu-burger:before
+{
+    top: -8px;
+
+    
+}
+.icon-menu-burger:after
+{
+    bottom: -8px;
+
+    
+} 
+    
+}
+@media (min-width: 992px) {
+
+    .fa_mobile-menu-button{
+        display: none;
+    }
+    .fa_nav-wrap
+    {
+       display: none; 
+        
+
+    }
+    
+}
+@media (min-width: 1200px) {
+    
+}

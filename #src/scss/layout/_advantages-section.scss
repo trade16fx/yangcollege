@@ -1,0 +1,136 @@
+.fa_advantages-area{
+  h2{
+    margin-bottom: 22px;
+  }
+}
+.fa_adv-grid{
+  &__inner{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: -20px;
+  }
+  &__item{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+.fa_adv-card{
+    display: flex;
+    align-items: flex-start;
+  &__body{
+    flex:1;
+  }
+  &__mediabox{
+    margin-right: 15px;
+    width: 45px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #28CBFF;
+    text-align: center;
+  }
+
+  img{
+    // width: 48px;
+    // margin-right: 10px;
+    width: 90%;
+  }
+  &__label{
+    font-weight: 400;
+    margin-bottom: 4px;
+    color: #000;
+  }
+  &__text{
+    font-size: 14px;
+    color: #6D6D6D;
+  }
+}
+@media (min-width: 576px) { 
+    
+}
+@media (min-width: 768px) { 
+  .fa_advantages-area{
+    h2{
+      margin-bottom: 50px;
+    }
+  }
+  .fa_adv-grid{
+    &__inner{}
+    &__item{
+      width: 50%;
+      padding-right: 15px;
+    }
+  } 
+  .fa_adv-card{
+    align-items: flex-start;
+    &__body{
+      // padding-top: 4px;
+    }
+
+  }  
+}
+@media (min-width: 992px) {
+  .fa_advantages-area{
+    h2{
+      font-size: 48px;
+      margin-bottom: 58px;
+      text-align: left;
+    }
+  }
+  .fa_adv-grid{
+    &__inner{
+      margin-bottom: -58px;
+    }
+    &__item{
+      margin-bottom: 50px;
+    }
+  }
+   .fa_adv-card{
+    
+    &__body{
+      
+    }
+
+    &__mediabox{
+      width: 60px;
+      margin-right: 20px;
+      padding-top: 4px;
+    }
+    img{
+      width: auto;
+      
+    }
+    &__label{
+      font-size: 20px;
+      margin-bottom: 10px;
+      line-height: 1.2;
+
+    }
+    &__text{
+      font-size: 15px;
+    }
+  }   
+}
+@media (min-width: 1200px) {
+  .fa_advantages-area{
+    h2{}
+  }
+  .fa_adv-grid{
+    &__inner{}
+    &__item{
+      width: 32%;
+
+      &:nth-child(3n+1){
+        width: 34%;
+      }
+      &:nth-child(3n+2){
+        width: 34%;
+      }
+    }
+  }
+  .fa_adv-card{
+    &__body{}
+    &__label{}
+    &__text{
+      padding-right: 30px;
+    }
+  }  
+}

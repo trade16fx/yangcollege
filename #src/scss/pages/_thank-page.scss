@@ -1,0 +1,110 @@
+.fa_thank-text{
+  p{
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+}
+.fa_sotial-block{
+  background: #0B3077;
+  box-shadow: 0px 0px 15px rgba(72, 72, 72, 0.15);
+  border-radius: 8px;
+  padding: 28px 20px 18px;
+  p{
+    font-size: 14px;
+    margin-bottom: 16px;
+  }
+}
+.ya-share2__link{
+  border-bottom: none;
+}
+.ya-share2__container_size_m .ya-share2__icon{
+  width: 34px !important;
+  height: 34px !important;
+   background-repeat: no-repeat !important;
+    background-position: center !important;
+}
+.ya-share2__badge{
+  border-radius: 0 !important;
+}
+.ya-share2__item_service_vkontakte .ya-share2__icon{
+  background: url(../images/vk.svg) center no-repeat !important;
+  background-size:  17px auto !important;
+}
+.ya-share2__item_service_facebook .ya-share2__icon{
+    background-size:  24px auto !important;
+
+}
+.ya-share2__item_service_odnoklassniki .ya-share2__icon{
+    background-size:  24px auto !important;
+
+}
+.ya-share2__item_service_twitter .ya-share2__icon{
+    background-size:  24px auto !important;
+
+}
+
+
+@media (min-width: 576px) { 
+    
+}
+@media (min-width: 768px) { 
+
+  .fa_thank-text{
+    max-width: 580px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+    text-align: center;
+    p{
+      font-size: 18px;
+      
+    }
+  } 
+  .fa_sotial-block{
+    padding: 28px 42px 10px;
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    p{
+      font-size: 16px;
+      margin-bottom: 30px;
+    }
+  }
+  .ya-share2__container_size_m .ya-share2__icon{
+    width: 42px !important;
+    height: 42px !important;
+   
+  }
+  .ya-share2__container_size_m .ya-share2__item{
+    margin-left: 4px;
+    margin-right: 4px;
+  }
+
+  .ya-share2__item_service_vkontakte .ya-share2__icon{
+  background: url(../images/vk.svg) center no-repeat !important;
+  background-size:  20px auto !important;
+}
+.ya-share2__item_service_facebook .ya-share2__icon{
+    background-size:  30px auto !important;
+
+}
+.ya-share2__item_service_odnoklassniki .ya-share2__icon{
+    background-size:  30px auto !important;
+
+}
+.ya-share2__item_service_twitter .ya-share2__icon{
+    background-size:  30px auto !important;
+  
+}
+    
+}
+@media (min-width: 992px) {
+    .fa_sotial-block{
+      max-width: 690px;
+
+    }
+}
+@media (min-width: 1200px) {
+    
+}

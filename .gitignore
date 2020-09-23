@@ -1,0 +1,9 @@
+/#src/fonts/
+/dist/*.html
+/dist/css/
+/dist/js/
+/dist/images/
+/node_modules/
+/arch/
+/.git/
+

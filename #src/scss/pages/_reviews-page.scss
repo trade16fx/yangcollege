@@ -1,0 +1,231 @@
+.fa_reviews-page{
+
+    background: url(../images/grid-bg.png) calc(50% + 600px) 200px no-repeat;
+    margin-bottom: 100px;
+
+}
+.fa_contact-section {
+
+
+
+    background: url(../images/grid-bg.png) calc(50% - 660px) top no-repeat, url(../images/body-bg5.jpg) calc(50% + 260px) bottom no-repeat;
+
+    padding-bottom: 200px;
+}
+
+.fa_reviews-list{
+
+    width: 924px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-bottom: 40px;
+
+    &__item{
+        margin-bottom: 20px;
+
+    }
+
+
+
+}
+
+.fa_reviews-card
+{
+    display: flex;
+    flex-wrap: wrap;
+
+    padding: 15px 30px 25px 15px;
+
+    border: 1px solid #f7f7f7;
+
+    &_answer
+    {
+        background-color: #f7f7f7;
+    }
+
+    &__body
+    {
+        font-size: .875rem;
+
+        width: 70%;
+    }
+    &__info
+    {
+        width: 30%;
+
+        img{
+
+            max-width: 90%;
+        }
+    }
+    &__name
+    {
+        font-size: 1.125rem;
+        font-weight: 700;
+
+        display: block;
+
+        margin-bottom: 6px;
+    }
+    &__date
+    {
+        font-size: 1rem;
+
+        right: 16px;
+
+        display: inline-block;
+
+        color: #808080;
+    }
+
+    &__rating
+    {
+        display: inline-block;
+
+        width: 98px;
+        height: 16px;
+
+        background: #fff url(../images/stars.png) 0 0 no-repeat;
+    }
+}
+
+.fa_form-rating{
+    display: flex;
+    align-items: center;
+
+    &__label{
+        display: inline-block;
+        margin-right: 23px;
+
+    }
+    &__stars{
+        display: inline-block;
+        height: 30px;
+        width: 175px;
+        background-image: url(../images/rating.png);
+
+    }
+
+
+}
+.fa_contact-section {
+.fa_rooms-form__info{
+
+    width: 100%;
+}}
+
+
+@media (max-width: 991px)
+{
+
+    .fa_reviews-list{
+
+        width: 100%;
+
+    }
+
+}
+
+@media (max-width: 767px)
+{
+    .fa_reviews-card
+    {
+        padding: 10px 20px 9px 9px;
+
+
+
+        &__body
+        {
+            font-size: .75rem;
+        }
+
+        &__name
+        {
+            font-size: .8125rem;
+        }
+        &__date
+        {
+            font-size: .8125rem;
+        }
+    }
+
+    .fa_form-rating{
+        flex-direction: column;
+
+        align-items: flex-start;
+        margin-top: -16px;
+
+        &__label{
+
+            margin-bottom: 4px;
+            font-size: .8125rem;
+        }
+    }
+
+    .fa_contact-section  {
+    
+        .fa_calc-wrapper{
+    
+            padding: 0;
+        }}
+
+        .fa_contact-section {
+
+
+
+    background: url(../images/m-body-bg5.jpg) right calc(100% - 30px) no-repeat;
+
+    padding-bottom: 70px;
+}
+
+.fa_reviews-page{
+
+    margin-bottom: 20px;
+}
+
+
+}
+
+@media (max-width: 575px)
+{
+    .fa_reviews-card
+    {
+        &__body
+        {
+            width: 100%;
+        }
+        &__info
+        {
+            width: 100%;
+            margin-bottom: 16px;
+
+            img
+            {
+                width: 118px;
+            }
+        }
+    }
+
+    .fa_rooms-form__wrapper
+    {
+        margin-bottom: 16px;
+    }
+
+    .fa_form-rating
+    {
+        flex-direction: row;
+
+        margin-top: 0;
+        margin-bottom: 16px;
+
+        align-items: center;
+
+        &__label
+        {
+            margin-right: 10px;
+            margin-bottom: 0;
+        }
+    }
+}

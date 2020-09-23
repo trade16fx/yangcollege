@@ -1,0 +1,262 @@
+.fa_address-block
+{
+    display: flex;
+
+    width: 1150px;
+    margin-right: auto;
+    margin-left: auto;
+
+    flex-wrap: wrap;
+
+    .fa_calc-wrapper
+    {
+        width: 60%;
+        &__smtext
+        {
+            text-align: left;
+        }
+    }
+}
+
+
+.fa_address
+{
+    width: 40%;
+
+    &__item
+    {
+        padding-left: 42px;
+        margin-bottom: 20px;
+
+        @extend .img-el;
+
+        &_address
+        {
+            &:before
+            {
+                width: $sp01-width;
+                height: $sp01-height;
+
+                background-position: $sp01-offset-x $sp01-offset-y;
+            }
+        }
+        &_phone
+        {
+            &:before
+            {
+                width: $sp02-width;
+                height: $sp02-height;
+
+                background-position: $sp02-offset-x $sp02-offset-y;
+            }
+        }
+        &_mail
+        {
+            &:before
+            {
+                width: $sp41-width;
+                height: $sp41-height;
+
+                background-position: $sp41-offset-x $sp41-offset-y;
+            }
+
+            a{
+                color: #000;
+                text-decoration: none;
+                display: inline-block;
+                margin-bottom: 19px;
+
+            }
+        }
+    }
+    &__label
+    {
+        font-size: 1.125rem;
+        font-weight: 700;
+
+        display: block;
+
+        margin-bottom: 8px;
+
+        &:before
+        {
+            background-image: url(../images/sprite.png);
+        }
+    }
+    &__sotial{
+
+        a{
+            display: inline-block;
+            margin: 0 4px;
+
+        }
+    }
+}
+.fa_map-section{
+    background: url(../images/grid-bg.png) calc(50% + 700px) bottom no-repeat;
+    padding-bottom: 70px;
+}
+#map{
+
+    height: 518px;
+
+    width: 100%;
+    border: 8px solid #f7f7f7;
+    border-radius: 20px;
+   
+
+}
+
+
+@media (max-width: 1279px)
+{
+.fa_address-block
+{
+    width: 100%;
+
+    .fa_calc-wrapper
+    {
+        width: 65%;
+       
+    }
+}
+
+    .fa_address
+    {
+        width: 35%;
+    }
+}
+
+@media (max-width: 991px)
+{
+    .fa_address-block
+    {
+        .fa_calc-wrapper
+        {
+            width: 100%;
+            &__smtext
+            {
+                text-align: center;
+            }
+        }        
+    }
+
+    .fa_address
+        {
+            display: flex;
+
+            width: 100%;
+
+            margin-bottom: 40px;
+
+
+            &__item
+            {
+                font-size: .875rem;
+
+                width: 33%;
+                padding-left: 25px;
+
+
+
+
+
+                &_address
+                {
+                    br
+                    {
+                        display: none;
+                    }
+                    &:before
+                    {
+                        width: $sp42-width;
+                        height: $sp42-height;
+
+                        background-position: $sp42-offset-x $sp42-offset-y;
+                    }
+                }
+                &_phone
+                {
+                    &:before
+                    {
+                        width: $sp43-width;
+                        height: $sp43-height;
+
+                        background-position: $sp43-offset-x $sp43-offset-y;
+                    }
+                }
+                &_mail
+                {
+                    &:before
+                    {
+                        width: $sp44-width;
+                        height: $sp44-height;
+
+                        background-position: $sp44-offset-x $sp44-offset-y;
+                    }
+                }
+            }
+
+            &__label
+            {
+                 font-size: 1rem;
+            }
+        }
+
+        #map{
+
+            height: 400px;
+        }
+}
+@media (max-width: 767px)
+{
+    .fa_address
+    {
+        &__item
+        {
+            font-size: .8125rem;
+        }
+
+        &__label
+        {
+            font-size: .8125rem;
+        }
+    }
+    #map{
+
+            height: 324px;
+        }
+        .fa_address-block
+    {
+        .fa_calc-wrapper
+        {
+            
+            &__smtext
+            {
+                text-align: center;
+
+                b{
+                    display: block;
+                    
+                }
+            }
+        }        
+    }
+}
+@media (max-width: 575px)
+{
+    .fa_address
+    {
+        flex-wrap: wrap;
+        &__item
+        {
+
+            width: 100%;
+
+        }
+
+    }
+}
+
+
+

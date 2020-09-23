@@ -1,0 +1,21 @@
+@function max($numbers...) {
+	@return m#{a}x(#{$numbers})
+};
+@function min($numbers...) {
+	@return m#{i}n(#{$numbers})
+};
+
+//@import "app/libs/bootstrap/dist/css/bootstrap.min"; 
+// @import "app/libs/bootstrap/dist/css/bootstrap-grid";
+@import "node_modules/@fancyapps/fancybox/dist/jquery.fancybox";
+//@import "app/libs/slick-carousel/slick/slick.scss";
+//@import "app/libs/slick-carousel/slick/slick-theme.scss"; 
+//@import "app/libs/font-awesome/css/font-awesome.min"; 
+@import "node_modules/swiper/swiper-bundle";
+// @import "app/libs/animate";
+// @import "app/libs/magnific-popup/dist/magnific-popup";
+// @import "app/libs/jquery-ui/themes/base/theme";
+// @import "app/libs/jquery-ui/themes/base/datepicker";
+// @import "app/libs/jquery-ui/themes/base/selectmenu";
+// @import "app/libs/jquery-ui/themes/base/slider";
+

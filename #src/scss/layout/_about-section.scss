@@ -1,0 +1,181 @@
+.fa_about-area{
+  background-color: #EFF8FF;
+  font-size: 14px;
+  h2{
+
+  }
+
+  p{
+    margin-bottom: 16px;
+
+  }
+  
+
+}
+.fa_similar{
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  padding: 17px 20px;
+  margin-top: 26px;
+
+  h3{
+    margin-top: 0;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #D3D3D3;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.1;
+
+  }
+  ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+   
+    li{
+      margin-bottom: 13px;
+
+      a{
+        border-color: transparent;
+        padding-right: 10px;
+        color: #333333;
+        // position: relative; 
+
+
+            // &:before{
+            //     display: block;
+            //     position: absolute;
+            //     right: 0;
+            //     bottom: 3px;
+            //     content: '';
+            //     width: 5px;
+            //     height: 7px;
+            //     // transform: translateY(-50%);
+            //     background-image: url(../images/link-arrow.svg);
+            // }
+          
+       
+         background:  url(../images/link-arrow.svg) right calc(100% - 3px) no-repeat;
+
+        &:hover{
+          color: #3aa1ec;
+        }
+      }
+
+    }
+  }
+  &__help-link{
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 400px) {
+
+  .fa_about-area{
+    &__body{
+      br{
+        display: none;
+      }
+    } 
+  }  
+}
+@media (min-width: 768px) {
+
+ .fa_about-area{
+  .fa_container{
+    display: flex;
+    align-items: flex-start;
+
+  }
+  &__body{
+    flex:1;
+    padding-right: 24px;
+  }
+  h2{
+
+  }
+
+  p{
+
+    &:last-child{
+      margin-bottom: 0;
+    }
+
+  }
+}
+.fa_similar{
+  width: 300px;
+  margin-top: 0;
+  h3{
+    
+
+  }
+  ul{
+    li{
+
+    }
+  }
+  &__help-link{
+
+  }
+}
+    
+}
+@media (min-width: 992px) {
+  .fa_about-area{
+  h2{
+
+  }
+
+  p{
+    font-size: 17px;
+  }
+  &__body{
+    padding-right: 50px;
+  }
+}
+.fa_similar{
+  width: 349px;
+  padding: 27px 33px;
+  
+
+  h3{
+    font-size: 22px;
+    padding-bottom: 18px;
+
+  }
+  ul{
+    li{
+      font-size: 15px;
+
+    }
+  }
+  &__help-link{
+
+  }
+}  
+}
+@media (min-width: 1200px) {
+  .fa_about-area{
+  h2{
+
+  }
+
+  p{
+
+  }
+}
+.fa_similar{
+  h3{
+
+  }
+  ul{
+    li{
+
+    }
+  }
+  &__help-link{
+
+  }
+}
+}

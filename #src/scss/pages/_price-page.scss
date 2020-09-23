@@ -1,0 +1,200 @@
+.fa_price-section
+{
+    padding-bottom: 190px;
+
+    background: url(../images/grid-bg.png) calc(50% - 580px) 0 no-repeat, url(../images/body-bg5.jpg) calc(50% + 260px) bottom no-repeat;
+}
+.fa_rooms-list-section
+{
+    padding-bottom: 80px;
+
+    background: url(../images/grid-bg.png) calc(50% + 580px) 250px no-repeat, url(../images/grid-bg.png) calc(50% - 580px) bottom no-repeat;
+}
+.fa_price-desc
+{
+    display: flex;
+
+    width: 1164px;
+    margin-right: auto;
+    margin-left: auto;
+
+    flex-wrap: wrap;
+
+
+
+
+    &__item
+    {
+        position: relative;
+        padding-left: 80px;
+
+        span {
+            margin-right: 16px;
+        }
+
+        &:first-child
+        {
+            width: 55%;
+
+            margin-right: 100px;
+           
+
+            &:before
+            {
+                width: $sp33-width;
+                height: $sp33-height;
+
+                background-position: $sp33-offset-x $sp33-offset-y;
+            }
+        }
+        &:last-child
+        {
+
+        max-width: 50%;
+            &:before
+            {
+                width: $sp34-width;
+                height: $sp34-height;
+
+                background-position: $sp34-offset-x $sp34-offset-y;
+            }
+        }
+
+        &:before
+        {
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            display: block;
+
+            content: '';
+
+            background-image: url(../images/sprite.png);
+        }
+    }
+    &__note
+    {
+        font-size: .875rem;
+
+        color: #4d4d4d;
+    }
+}
+.fa_rooms-list
+{
+    width: 1164px;
+    margin-right: auto;
+    margin-left: auto;
+
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .15);
+
+    &__item
+    {
+        &:nth-child(odd)
+        {
+            background-color: #f7f7f7;
+        }
+    }
+}
+
+@media (max-width: 1429px)
+{
+    .fa_rooms-list
+    {
+        width: 100%;
+    }
+
+    .fa_price-desc
+    {
+        width: 100%;
+    }
+}
+@media (max-width: 1279px)
+{
+    .fa_price-desc
+    {
+        font-size: .875rem;
+    }
+}
+@media (max-width: 991px)
+{
+    .fa_price-desc
+    {
+        &__item
+        {
+            padding-left: 45px;
+
+            span{
+                display: block;
+                margin-bottom: 8px;
+            }
+
+            &:first-child
+        {
+           
+            margin-right: 5px;
+
+            &:before
+            {
+                width: $sp35-width;
+                height: $sp35-height;
+
+                background-position: $sp35-offset-x $sp35-offset-y;
+            }
+        }
+        &:last-child
+        {
+            &:before
+            {
+                width: $sp36-width;
+                height: $sp36-height;
+
+                background-position: $sp36-offset-x $sp36-offset-y;
+            }
+        }
+
+
+        }
+
+
+    }
+}
+@media (max-width: 767px)
+{
+    .fa_price-section
+    {
+        padding-bottom: 60px;
+
+        background: url(../images/m-body-bg5.jpg) right bottom no-repeat;
+    }
+
+    .fa_price-desc
+    {
+        &__item
+        {
+            max-width: 100%;
+
+            &:first-child
+            {
+                width: 100%;
+            }
+        }
+    }
+    .fa_rooms-list{
+
+        box-shadow: none;
+        background-color: transparent;
+
+    }
+
+    .fa_rooms-list-section
+{
+    padding-bottom: 10px;
+
+    background: url(../images/m-grid-bg.png) calc(50% - 140px) 20px no-repeat, url(../images/m-grid-bg.png) calc(50% + 140px) bottom no-repeat;
+}
+}
+
+
+
