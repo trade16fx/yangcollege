@@ -24,7 +24,7 @@
     margin-right: 15px;
     width: 45px;
     padding-bottom: 10px;
-    border-bottom: 2px solid #28CBFF;
+    border-bottom: 2px solid $accent-color;
     text-align: center;
   }
 
@@ -95,7 +95,10 @@
       padding-top: 4px;
     }
     img{
-      width: auto;
+      width: 50px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
       
     }
     &__label{
@@ -123,6 +126,9 @@
       }
       &:nth-child(3n+2){
         width: 34%;
+        .fa_adv-card__label{
+          width: 230px;
+        }
       }
     }
   }

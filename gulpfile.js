@@ -70,7 +70,7 @@ function browserSync() {
 function html() {
 	return src(patch.src.html)
 	.pipe(fileinclude())
-	.pipe(webpHTML())
+	// .pipe(webpHTML())
 	.pipe(dest(patch.build.html)) // Выгружаем готовый файл в папку назначения	
 	.pipe(browsersync.stream()) // Триггерим Browsersync для обновления страницы
 }

@@ -1,24 +1,24 @@
-
-  @import './base/_mixins.scss';
+  @import './base/variables';
+  @import './base/mixins';
   // @import './_fonts.scss'; 
  //@import './_sprite.scss'; 
 
  // @import './layout/_buttons.scss';
-  @import './layout/_base.scss';
+  @import './layout/base';
 
-  @import './layout/_header.scss';
-  @import './modules/_mbmenu.scss';
-  
-  @import './layout/_doc-section.scss';
-  @import './layout/_program-section.scss';
-  @import './layout/aboutcourse-section';
-  @import './layout/_license-section.scss';
+  @import './layout/header';
+ 
+  @import './layout/program-section';
+  @import './layout/doc-section';
+  @import './layout/lisense-slider-area';
+
+  @import './layout/aboutcourse-section';  
   @import './layout/_reserved-section.scss';
   @import './layout/_advantages-section.scss';
-  @import './layout/_steps-section.scss';
-  
+  @import './layout/_steps-section.scss';  
   @import './layout/_mazo-section.scss';
-  @import './layout/_clients-section.scss';
+
+  
   @import './layout/_faq-section.scss';
   @import './layout/_forms.scss';
   @import './layout/_modal.scss';

@@ -27,30 +27,46 @@ jQuery(document).ready(function($) {
       }, 800);
   });
 
-  var swiper = new Swiper('.js-doc-slider', {
-    slidesPerView: 1,
-    autoHeight: true,
-    spaceBetween: 0,
-    navigation: {
-      nextEl: '.fa_doc-slider__arrow_next',
-      prevEl: '.fa_doc-slider__arrow_prev',
-    }
-  });
+  if ($('.js-doc-slider').length) {
+    $('.js-doc-slider').each(function(i) {     
 
-  var swiper = new Swiper('.js-license-slider', {
-    slidesPerView: 1,
-    spaceBetween: 0,
-    navigation: {
-      nextEl: '.fa_license-slider__arrow_next',
-      prevEl: '.fa_license-slider__arrow_prev',
-    }
-  });
+      var swiper = new Swiper(this, {
+        slidesPerView: 1,
+        autoHeight: true,
+        spaceBetween: 0,
+        navigation: {
+          nextEl: '.fa_doc-slider__arrow_next-'+i,
+          prevEl: '.fa_doc-slider__arrow_prev-'+i,
+        },
+
+        debugger: true,
+      });
+    });  
+  };
+
+
+  if ($('.js-license-slider').length) {
+    $('.js-license-slider').each(function(i) { 
+
+      var swiper = new Swiper(this, {
+        slidesPerView: 1,
+        spaceBetween: 0,
+        loop: true,
+        navigation: {
+          nextEl: '.license-slider__arrow_next-'+i,
+          prevEl: '.license-slider__arrow_prev-'+i,
+        }
+      });
+    });  
+  };
  
   $('.js-tab-link').click(function(event) {
     event.preventDefault();
     var id = $(this).attr('href');
     $('.js-tab-link').removeClass('active');
+    $('.js-tab-link').parent('li').removeClass('active');
     $(this).addClass('active');
+    $(this).parent('li').addClass('active');
     $('.fa_maintabs').removeClass('active');
     $(id).addClass('active');
   });
@@ -64,19 +80,7 @@ jQuery(document).ready(function($) {
     event.preventDefault();    
   });
   
-  // Modernizr.on('webp', function (result) {    
-  //   if (result) {
-  //     $('.js-image').each(function(index, el) {
-  //       var datawebp = $(this).data('src');
-  //       $(this).attr('href', datawebp);
-        
-  //     });     
-  //   }  
-  // });
-
-
-
-  
+   
   var pattern = /^[a-z0-9_-]+@[a-z0-9-]+\.([a-z]{1,6}\.)?[a-z]{2,6}$/i;
    
   $('.js-email').blur(function(){
@@ -146,58 +150,6 @@ jQuery(document).ready(function($) {
 
   
 
-  // $(document).on('afterShow.fb', function( e, instance, slide ) {
-  //     $('.fa_header').addClass('open');  
-  // });
-  // $(document).on('beforeClose.fb', function( e, instance, slide ) {
-  //     $('.fa_header').removeClass('open');  
-  // });
-
-
-  var now = new Date();
-
-  var month = now.getMonth();
-  var day = now.getDate();
-
-  var season = '';
-
-  if (month == 0) {
-   season = 'зимнего';
-  } else if (month == 1) {
-   season = 'зимнего';
-    if (day>=27) {
-     season = 'весеннего';
-    }
-  } else if (month == 3) {
-   season = 'весеннего';
-  } else if (month == 4) {
-   season = 'весеннего';
-    if (day>=27) {
-     season = 'летнего';
-    }    
-  } else if (month == 5) {
-   season = 'летнего';
-  } else if (month == 6) {
-   season = 'летнего';
-  } else if (month == 7) {
-   season = 'летнего';
-    if (day>=27) {
-     season = 'осеннего';
-    }
-  } else if (month == 8) {
-   season = 'осеннего';
-  } else if (month == 9) {
-   season = 'осеннего';
-  } else if (month == 10) {
-   season = 'осеннего';
-    if (day>=27) {
-     season = 'зимнего';
-    }
-  } else if (month == 11) {
-   season = 'зимнего';
-  } 
-
-  $('.js-season').text(season);
 
   var hea = $( document ).height() / 2;
     $(function () {
@@ -242,8 +194,8 @@ ymaps.ready(init);
         }, {
             
             iconLayout: 'default#image',
-            iconImageHref: 'images/baloon.svg',
-            iconImageSize: [30, 63]
+            iconImageHref: 'images/baloon.png',
+            iconImageSize: [56, 71]
         });
 
       myMap.geoObjects

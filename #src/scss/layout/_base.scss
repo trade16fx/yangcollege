@@ -44,6 +44,8 @@ body
     background-color: #fff;
     position: relative;
 
+    
+
     &.no-scroll{
       position: fixed;
       width: 100%;
@@ -91,11 +93,13 @@ input {
     height: 100%;
     // display: none;
 
+    height: 10000px;
+
     pointer-events: none;
 
     opacity: .2;
-    background-image: url(../images/bg01.png);
-    background-position: center 0px; 
+    background-image: url(../images/bg02.png);
+    background-position: center -605px; 
 
             filter: invert(100%);
     -webkit-filter: invert(100%);
@@ -132,12 +136,19 @@ img
 .fa_modal{
   display: none;
 }
+.site-wrap{
+
+}
+
+.brand-bg{
+  background-color: $branding-color;
+}
 .fancybox-bg{
   // background: linear-gradient(0deg, rgba(4, 111, 188, 0.65), rgba(4, 111, 188, 0.65)), linear-gradient(0deg, rgba(58, 161, 236, 0.4), rgba(58, 161, 236, 0.4)), linear-gradient(0deg, rgba(0, 63, 121, 0.5), rgba(0, 63, 121, 0.5));
   // background-blend-mode: normal, color, normal, normal;
   
   
-  background-color: rgba(0, 70, 120, .4);
+  background-color: rgba(11, 48, 119, .4);
 
 }
 .fancybox-active{ 

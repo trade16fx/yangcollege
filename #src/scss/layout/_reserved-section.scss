@@ -1,33 +1,28 @@
 .fa_reserved-area{
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-color: #103C8F;
+  background-position: center top;
+
+  background: linear-gradient(0deg, #212F70, #212F70), linear-gradient(0deg, rgba(0, 63, 181, 0.3), rgba(0, 63, 181, 0.3));
 }
 
-// .no-webp .fa_reserved-area{
-//  background-image: linear-gradient(0deg, rgba(0, 63, 181, 0.3), rgba(0, 63, 181, 0.3)), url(../images/m-top-bg.jpg);
-// }
-// .webp .fa_reserved-area{
-//  background-image: linear-gradient(0deg, rgba(0, 63, 181, 0.3), rgba(0, 63, 181, 0.3)), url(../images/m-top-bg.webp);
-// }
+
 
 
 
 @media (min-width: 768px) { 
 
    .no-webp .fa_reserved-area{
-      background-image: linear-gradient(0deg, rgba(0, 63, 181, 0.3), rgba(0, 63, 181, 0.3)), url(../images/top-bg.jpg);
+      background-image: linear-gradient(0deg, rgba(30, 36, 94, 0.5), rgba(30, 36, 94, 0.5)), url(../images/res-bg.jpg);
     }
     .webp .fa_reserved-area{
-      background-image: linear-gradient(0deg, rgba(0, 63, 181, 0.3), rgba(0, 63, 181, 0.3)), url(../images/top-bg.webp);
+      background-image: linear-gradient(0deg, rgba(30, 36, 94, 0.5), rgba(30, 36, 94, 0.5)), url(../images/res-bg.webp);
     } 
 }
 
 
 @media (min-width: 992px) {
   .fa_reserved-area{
-    padding: 100px 0;
+    padding: 120px 0;
   }
 }
 @media (min-width: 1200px) {

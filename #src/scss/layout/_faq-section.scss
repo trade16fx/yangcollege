@@ -111,14 +111,14 @@
   }
   .fa_faq-grid{
     display: flex;
-    flex-wrap: wrap; 
+    
     padding-bottom: 0; 
    
 
     margin-bottom: 0;
 
-    &__item{
-      width: 50%;
+    &__col{
+      flex: 0 0 50%;
 
       &:nth-child(even){
          padding-right: 25px;
@@ -127,6 +127,14 @@
         padding-left: 10px;
         padding-right: 15px;
       }
+
+
+    }
+
+    &__item{
+     
+
+      
       
     }
   }
@@ -226,7 +234,7 @@
   .fa_faq-grid{
 
     &__section{}
-    &__item{
+    &__col{
      
 
       &:nth-child(even){
@@ -242,7 +250,9 @@
   }
   .fa_faq-card{
     padding: 18px 18px 10px 22px;
-    &__title{}
+    &__title{
+      padding-right: 55px;
+    }
     &__body{}
     p{}
   }

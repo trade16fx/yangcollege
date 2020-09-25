@@ -1,5 +1,5 @@
 .fa_mazo-area{
-  background-color: #F2F8FC;
+  background-color: #fff;
   overflow: hidden;
   h2{
     font-size: 25px;
@@ -76,28 +76,36 @@
 
   }
 
-  .tab1-list{
-
-    &:first-child .tab1-list__item:last-child{       
-      .fa_topcard__mediabox{
-         margin-top: 3px;
-      }      
-    }
-    
-    &:last-child .tab1-list__item:last-child{        
-      margin-bottom: 0;         
-    }
-    
-      
-  }
+  
 
 }
 .tab1-list{
   margin: 0;
   padding: 0;
   list-style-type: none;
+
+  display: flex;
+    flex-direction: column;
+
   &__item{
     margin-bottom: 24px;
+
+    &:nth-child(1){
+      order:0;
+    }
+    &:nth-child(2){
+      order:3;
+    }
+    &:nth-child(3){
+      order:2;
+    }
+    &:nth-child(4){
+      order:1;
+    }
+    &:nth-child(5){
+      order:4;
+      margin-bottom: 0;
+    }
 
 
   }  
@@ -291,8 +299,18 @@
     }
   }
   .fa_maintabs-nav{
+    margin-bottom: 30px;
   li{
+    display: inline-block;
+    padding: 8px 22px;
+    border-radius: 8px;
+    margin: 0;
+    transition: all .3s;
+     &.active{
 
+      background-color: #F2F7FC;
+    }
+    
   }
   a{
     
@@ -311,15 +329,22 @@
     display: flex;
   }
   .tab1-list{
-    width: 50%;
+    
     padding-right: 30px;
+    flex-direction: row;
+    flex-wrap: wrap;
     &__item{
       margin-bottom: 40px;
+      flex: 0 0 50%;
+      padding-right: 35px;
+
+      order:0 !important;
+
     }  
   }
   .fa_topcard{
     img{
-      width: 56px;
+      width: 40px;
       
     }
     &__body{}
@@ -426,19 +451,15 @@
     h2{
       text-align: left;
       font-size: 45px;
-      max-width: 760px;
-      margin-bottom: 60px;
+      
+      margin-bottom: 20px;
     }
 
   }
   .fa_maintabs-cont{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+   
     &__body{
-      width: 68%;
-
-      order:0;
+      
 
     }
   } 
@@ -450,18 +471,13 @@
   } 
   .fa_maintabs{
 
+
     .tab1-list{
+
+      
 
      
       
-      &:last-child .tab1-list__item{ 
-        margin-bottom: 32px;
-
-        &:last-child{
-          margin-bottom: 0; 
-        }       
-                
-      }
       
         
     }
@@ -469,25 +485,18 @@
   }
 
   .fa_maintabs-nav{
-    width: 265px;
-    background-color: #fff;
-    border-radius: 8px;
-    padding: 32px 18px 28px 40px;
-    order: 1;
-    flex-direction: column;
-    margin-left: 0;
-    margin-right: 0;
+   
+    margin-bottom: 60px;
+    justify-content: flex-start;
+    padding-left: 12px; 
+   
+   
     li{
-      margin-right: 0;
-      margin-left: 0;
-      margin-bottom: 24px;
-      &:last-child{
-        margin-bottom: 0;
-      }
+     
     }
     a{
      
-      font-size: 20px;
+      font-size: 18px;
       font-weight: 200;
       
       &.active{
@@ -509,7 +518,7 @@
       width: 51px;
       margin-right: 18px;
       img{
-        width: auto;
+        // width: auto;
       }
     }
 
@@ -517,7 +526,7 @@
       margin-top: 4px;
     }
     &__label{
-      font-size: 24px;
+      font-size: 30px;
     }
     &__text{}
   }
@@ -528,6 +537,10 @@
 }
 @media (min-width: 1200px) {
   .fa_mazo-area{
+
+    h2{
+      font-size: 48px;
+    }
 
   }
   .fa_maintabs-cont{
@@ -545,7 +558,26 @@
 
   }
   .tab1-list{
-    &__item{}  
+    
+      &__item{
+        flex: 0 1 33%;
+
+        &:nth-child(2){
+          margin-left: 2%;
+          margin-right: 2%;
+          // flex: 0 1 40%;
+        }
+        &:nth-child(3){
+          flex: 0 1 24%;
+        }
+        &:nth-child(5){
+          margin-left: 2%;
+          // flex: 0 1 40%;
+        }
+
+
+      }
+     
   }
   .fa_topcard{
     &__body{}
@@ -574,3 +606,67 @@
     li{}
   }  
 }
+
+
+.simpleGallery {
+
+  @media (min-width: 576px) { 
+    display: flex;
+    flex-wrap: wrap;
+   
+    margin-bottom: -10px;
+    @media (min-width: 1200px) {
+      margin-bottom: -16px;
+    }
+  }
+  &__item {
+    margin-bottom: 10px;
+    width: 280px;
+    
+
+      @media (min-width: 576px) { 
+        flex: 0 0 50%;       
+        padding: 0 4px;        
+      }
+      @media (min-width: 992px) { 
+        flex: 0 0 33%;  
+             
+        padding: 0 8px;        
+                
+      }
+      @media (min-width: 1200px) { 
+        flex: 0 0 241px;  
+        margin-bottom: 16px;   
+                
+      }
+
+
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+  img{
+    max-width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+  a{
+      display: block;
+      height: 150px;
+      width: 225px;
+      overflow: hidden;
+  }
+}
+.lead-grid {
+  &__item {}
+}
+.lead-card {
+  &__mediabox {}
+  &__body {}
+  &__post {}
+  &__name {}
+  &__text {}
+}
+
