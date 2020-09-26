@@ -98,11 +98,11 @@
     
 
     &_next{
-      background-image: url(../images/next-arrow.svg);
+      background-image: url($imgSprite + 'next-arrow');
       right: 0;
     }
     &_prev{
-      background-image: url(../images/prev-arrow.svg);
+      background-image: url($imgSprite + 'prev-arrow');
       right: 27px;    
     }
 }
@@ -425,6 +425,8 @@
 }
   &__desc{
     font-size: 13px;
+    width: auto;
+    padding-left: 15px;
   }
   &__sert-cont{
   }

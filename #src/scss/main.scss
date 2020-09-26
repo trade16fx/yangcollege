@@ -13,19 +13,20 @@
   @import './layout/lisense-slider-area';
 
   @import './layout/aboutcourse-section';  
-  @import './layout/_reserved-section.scss';
-  @import './layout/_advantages-section.scss';
-  @import './layout/_steps-section.scss';  
-  @import './layout/_mazo-section.scss';
+  @import './layout/reserved-section';
+  @import './layout/advantages-section';
+  @import './layout/steps-section'; 
+  @import './layout/platform-area';
+  @import './layout/mazo-section';
 
   
-  @import './layout/_faq-section.scss';
-  @import './layout/_forms.scss';
-  @import './layout/_modal.scss';
-  @import './layout/_contact-section.scss';
-  @import './layout/_footer.scss';
+  @import './layout/faq-section';
+  @import './layout/forms.scss';
+  @import './layout/modal';
+  @import './layout/contact-section';
+  @import './layout/footer';
   // @import './modules/_show-bar.scss';
-  @import './pages/_thank-page.scss';
-  @import './pages/_info-page.scss';
+  @import './pages/thank-page';
+  // @import './pages/_info-page.scss';
  
  

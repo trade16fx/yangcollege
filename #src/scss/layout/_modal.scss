@@ -109,6 +109,9 @@
     
 }
 @media (min-width: 768px) { 
+
+
+
   .fa_modal{  
     padding-top: 0;
     max-width: 572px;
@@ -158,6 +161,14 @@
       padding-top: 0;
       // overflow: hidden;
       // padding-right: 30px;
+    }
+  }
+
+  #sert-modal, #diplom-modal{
+    .fa_modal-cont{
+      h3{
+        padding-right: 50px;
+      }
     }
   }
     

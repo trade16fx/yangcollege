@@ -39,7 +39,7 @@ jQuery(document).ready(function($) {
           prevEl: '.fa_doc-slider__arrow_prev-'+i,
         },
 
-        debugger: true,
+       
       });
     });  
   };
@@ -68,6 +68,17 @@ jQuery(document).ready(function($) {
     $(this).addClass('active');
     $(this).parent('li').addClass('active');
     $('.fa_maintabs').removeClass('active');
+    $(id).addClass('active');
+  });
+
+  $('.pltNav-tabs__link').click(function(event) {
+    event.preventDefault();
+    var id = $(this).attr('href');
+    $('.pltNav-tabs__link').removeClass('active');
+    
+    $(this).addClass('active');
+   
+    $('.pltTab-cont__pane').removeClass('active');
     $(id).addClass('active');
   });
 

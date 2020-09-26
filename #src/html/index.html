@@ -10,7 +10,8 @@
       @@include('./layout/_doc-area.html')
       @@include('./layout/_license-area.html')
       @@include('./layout/_reserved-area.html') 
-      @@include('./layout/_steps-area.html')     
+      @@include('./layout/_steps-area.html') 
+      @@include('./layout/_platform-area.html')    
       @@include('./layout/_about-tabs-area.html')    
       @@include('./layout/_faq-area.html')
       @@include('./layout/_reserved-area.html')
@@ -26,6 +27,13 @@
       <p>1. Диплом о среднем профессиональном образовании государственного образца 
       2. О профессиональной переподготовке установленного образца</p>
       <p>Это помогает устроиться на престижную высокооплачиваемую работу преуспеть в жизни.</p>
+      <p style="margin-bottom: 0">Вы можете выбрать 1 специальность по переподготовке:</p>
+      <ul >
+          <li>Специальность 1</li>
+          <li>Специальность 1</li>
+          <li>Специальность 1</li>
+          
+        </ul>
     </div>
     </div>
 
@@ -95,14 +103,19 @@
     <div class="fa_form-cont fa_form-cont_modal">
       <div class="fa_form-cont__body">
         <div class="fa_offer fa_offer_form">
-          <div class="fa_offer__title"> <span class="fa_offer__title-block">Получите дополнительную информацию о программе и забронируйте льготное место:      </span></div>
-          <div class="fa_offer__price"><span class="fa_offer__old-price">15 500</span><span class="fa_offer__note">13 800</span><span class="fa_offer__rest">руб./семестр</span></div>
+          <div class="fa_offer__title"> <span class="fa_offer__title-block">Предоставляем 35 льготных мест! </span><span class="fa_offer__title-block">Забронируйте место сейчас! </span><span class="fa_offer__title-block">Осталось: <span>0</span><span>7</span></span></div>
+          <div class="fa_offer__price">
+            <span class="fa_offer__from">От </span>
+            <span class="fa_offer__old-price">2 500</span>
+            <span class="fa_offer__note">2 000</span>
+            <span class="fa_offer__rest">руб./мес</span>
+          </div>
         </div>
-        <form autocomplete="on" method="post" class="fa_form fa_form_modal">
+        <form autocomplete="on" method="post" class="fa_form">
           <input style="display:none" type="reset" value="Reset">
           <input type="hidden" name="type" value="1">
           <div class="fa_form__row">
-            <div class="fa_form__group">   
+            <div class="fa_form__group">
               <input type="email" name="mail" placeholder="Введите Ваш e-mail" value required class="fa_form__inp-mail js-email">
             </div>
             <div class="fa_form__group">
@@ -113,23 +126,13 @@
             </div>
           </div>
         </form>
-        <div class="fa_form__agree">Нажимая на кнопку, вы даете согласие на <a href="http://xn--j1aql2a.xn--p1ai/doc/Soglashanie_ob_obrabotke_personalnykh_dannykh_kcet.pdf" rel="external">обработку персональных данных</a></div>
+        <div class="fa_form__agree">Нажимая на кнопку, вы даете согласие на <a href="https://xn--80axh3d.xn--p1ai/Soglashanie_ob_obrabotke_personalnykh_dannykh_MAEO.pdf" rel="external">обработку персональных данных</a></div>
       </div>
       <div class="fa_form-cont__info">
         <div class="fa_form-cont__info-tile">В течение 1 минуты вам на почту придёт:</div>
-        <div class="fa_ico-list">
-          <li>
-            <div class="fa_ico-list__mediabox"><img src="images/f-ico1.svg" alt=""></div>
-            <div class="fa_ico-list__body">Дополнительная информация об обучении</div>
-          </li>
-          <li>
-            <div class="fa_ico-list__mediabox"><img src="images/f-ico2.svg" alt=""></div>
-            <div class="fa_ico-list__body">Список документов для поступления</div>
-          </li>
-          <li> 
-            <div class="fa_ico-list__mediabox"><img src="images/f-ico3.svg" alt=""></div>
-            <div class="fa_ico-list__body">Контакты куратора                                  </div>
-          </li>
+        <div class="fa_ico-list">          
+          <li>Порядок поступления и список документов</li>
+          <li>Дополнительная информация об обучении</li>
         </div>
       </div>
     </div>
@@ -139,7 +142,12 @@
       <div class="fa_form-cont__body">
         <div class="fa_offer fa_offer_form">
           <div class="fa_offer__title"> <span class="fa_offer__title-block">Получите дополнительную информацию о программе и забронируйте льготное место:      </span></div>
-          <div class="fa_offer__price"><span class="fa_offer__old-price">15 500</span><span class="fa_offer__note">13 800</span><span class="fa_offer__rest">руб./семестр</span></div>
+          <div class="fa_offer__price">
+            <span class="fa_offer__from">От </span>
+            <span class="fa_offer__old-price">2 500</span>
+            <span class="fa_offer__note">2 000</span>
+            <span class="fa_offer__rest">руб./мес</span>
+          </div>
         </div>
         <form autocomplete="on" method="post" class="fa_form fa_form_modal">
           <input style="display:none" type="reset" value="Reset">
@@ -160,19 +168,9 @@
       </div>
       <div class="fa_form-cont__info">
         <div class="fa_form-cont__info-tile">В течение 1 минуты вам на почту придёт:</div>
-        <div class="fa_ico-list">
-          <li>
-            <div class="fa_ico-list__mediabox"><img src="images/f-ico1.svg" alt=""></div>
-            <div class="fa_ico-list__body">Дополнительная информация об обучении</div>
-          </li>
-          <li>
-            <div class="fa_ico-list__mediabox"><img src="images/f-ico2.svg" alt=""></div>
-            <div class="fa_ico-list__body">Список документов для поступления</div>
-          </li>
-          <li> 
-            <div class="fa_ico-list__mediabox"><img src="images/f-ico3.svg" alt=""></div>
-            <div class="fa_ico-list__body">Контакты куратора                                  </div>
-          </li>
+        <div class="fa_ico-list">          
+          <li>Порядок поступления и список документов</li>
+          <li>Дополнительная информация об обучении</li>
         </div>
       </div>
     </div>
