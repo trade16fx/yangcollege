@@ -28,7 +28,7 @@
   li{
     display: flex;
     margin-bottom: 16px;
-    align-items: flex-start;
+    align-items: center;
     font-size: 14px;
 
     &:last-child{
@@ -39,9 +39,9 @@
     width: 25px;
     padding-bottom: 4px;
     margin-right: 14px;
-    border-bottom: 2px solid #28CBFF;
+    border-bottom: 1px solid $accent-color;
     text-align: center;
-    margin-top: 4px;
+    
     img{
       width: 80%;
     }
@@ -105,11 +105,22 @@
     li{
       margin-bottom: 18px;
       align-items: center;
+
+      &:nth-child(1) img{
+        width: 17px;
+      }
+       &:nth-child(2) img{
+        width: 22px;
+      }
+       &:nth-child(3) img{
+        width: 18px;
+      }
+       &:nth-child(4) img{
+        width: 20px;
+      }
     }
     &__mediabox{
-      img{
-        width: auto;
-      }
+      
     }
     &__body{}
   }

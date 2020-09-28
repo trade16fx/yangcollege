@@ -209,7 +209,6 @@
   margin-bottom: 45px;
 
   @media (min-width: 992px) {
-
     margin-bottom: 162px;
   }
 
@@ -262,19 +261,14 @@
 
     }
 
-    picture {
+    img {
       flex: 0 0 32px;
-
+      display: block;
       @media (min-width: 992px) {
         flex: 0 0 38px;
       }
     }
-
-    img {
-
-      display: block;
-
-    }
+     
 
     a {
       border: none;
@@ -395,6 +389,7 @@
     margin-bottom: 8px;
     font-size: 18px;
 
+
     @media (min-width: 992px) {
       margin-bottom: 20px;
       font-size: 28px;
@@ -424,10 +419,11 @@
 
   &__note {
     font-weight: 500;
+    border-bottom: 1px solid $accent-color;
   }
 
   &_form &__note {
-    border-bottom: 2px solid #E05B23;
+   
     margin: 0 3px;
   }
 

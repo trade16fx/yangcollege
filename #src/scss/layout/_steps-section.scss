@@ -64,7 +64,7 @@
   }
   &__mediabox{
     width: 40px;
-    border-bottom: 2px solid #E05B23;
+    border-bottom: 1px solid $accent-color;
     padding-bottom: 9px;
     margin-right: 20px;
     text-align: center;
@@ -116,7 +116,7 @@
     &__item{}
     &__num{
       width: 33px;
-     
+     line-height: 1;
       font-size: 29px;
       padding-bottom: 9px;
       margin-right: 20px;
@@ -133,7 +133,7 @@
 }
 @media (min-width: 992px) {
   .fa_steps-area{
-    background-color: #0B3077;
+    background-color: $branding-color;
     overflow: hidden;
     .fa_title{
       display: none;
@@ -145,7 +145,7 @@
       h2{
         display: block;
         font-size: 43px;
-        margin-bottom: 34px;
+        margin-bottom: 48px;
         line-height: 1.1;
         text-align: left;
       }
@@ -169,7 +169,8 @@
               top: -50%;
               bottom: -50%;
               content: '';
-              background-color: #103C8F;
+              background-color: $branding-light-color;
+             
 
              
           }
@@ -180,7 +181,7 @@
       padding-right: 25px;
     &__item{
       margin-bottom: 30px;
-      align-items: flex-start;
+      align-items: center;
     }
     &__num{
 
@@ -217,6 +218,7 @@
       display: block;
       margin-left:  auto;
       margin-right: auto; 
+
     }
   }      
 }

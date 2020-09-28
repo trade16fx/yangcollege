@@ -205,7 +205,7 @@ ymaps.ready(init);
         }, {
             
             iconLayout: 'default#image',
-            iconImageHref: 'images/baloon.png',
+            iconImageHref: 'images/icons/icons.svg#baloon',
             iconImageSize: [56, 71]
         });
 
