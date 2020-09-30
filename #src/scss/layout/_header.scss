@@ -240,9 +240,8 @@
   &__logo-cont {
 
 
-    display: flex;
-    align-items: center;
-    width: 210px;
+   
+    width: 160px;
     margin-left: auto;
     margin-right: auto;
     border: none;
@@ -252,7 +251,7 @@
     }
 
     @media (min-width: 992px) {
-      width: 280px;
+      width: 180px;
       margin-left: 0;
 
       text-align: left;
@@ -262,10 +261,10 @@
     }
 
     img {
-      flex: 0 0 32px;
+      
       display: block;
       @media (min-width: 992px) {
-        flex: 0 0 38px;
+        
       }
     }
      

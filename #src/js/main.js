@@ -8,6 +8,9 @@ testWebP(function (support) {
 
 
 jQuery(document).ready(function($) {
+  $('[data-fancybox=""]').fancybox({
+    autoFocus: false
+});
 
   $(".js-phone").mask("+7 (999) 999-99-99");
 

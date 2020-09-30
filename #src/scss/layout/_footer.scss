@@ -27,28 +27,24 @@
   }
   &__logo{
     font-size: 11px;
-    width: 240px;
+    width: 165px;
     margin-left: auto;
     margin-right: auto;
-    font-size: 10px;
-    font-weight: 400;
+   
     margin-bottom: 27px;
 
-    display: flex;
-    align-items: center;
+   
     
       
       color: #000000;
     img{
      
-      margin-right: 12px;
+      
       display: block;
-      flex: 0 0 38px;
+     
     }
   }
-  &__logo-text{
-    flex: auto;
-  }
+ 
 
 
 
@@ -183,7 +179,7 @@
       align-items: center;
     }
     &__logo{
-      width: 290px;
+      width: 200px;
       font-size: 12px;
       margin-left: 0;
 
